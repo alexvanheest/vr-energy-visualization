@@ -27,10 +27,10 @@ from pprint import pprint	# for testing
 top_level_url = "https://pi-core.cc.lehigh.edu/PIWEBAPI/"
 # Cute username and password stuff with getpass()
 username      = ""	# NOTE: in order to run properly, input Lehigh username here.
-					# I've only deleted mine here for privacy purposes.
+			# I've only deleted mine here for privacy purposes.
 # print "Please enter password: "
 password      = getpass.getpass() 	# NOTE: Using getpass to protect user's creds
-									# when authenticating from a terminal.
+					# when authenticating from a terminal.
 
 # Energy units dictionary, for my reference:
 units_dict        = {'Daily Energy Usage':'kilowatt hour', 'Daily Power Usage':'kilowatt', 'Watts Usage':'watt'}
@@ -80,55 +80,54 @@ def create_json_with_cur_data(daily_energy_dict, daily_power_dict,
 	{
 		"Day":"2016-12-02",
 		"HMS":"06:01:48",
-		"BldgC": [ (USED)
+		"BldgC":
 			{
 				"DEU": "7.97415290855e+22",
 				"DPU": "3.4670231691e+21",
 				"WU": "10671098896.4"
 			}
-		],
-		"Sherman": [
+		,
+		"Sherman": 
 			{
 				"DEU": "7.97415290855e+22",
 				"DPU": "3.4670231691e+21",
 				"WU": "10671098896.4"
 			}
-		],
-		"RauchChiller": [ (USED)
+		,
+		"RauchChiller":
 			{
 				"DEU": "7.97415290855e+22",
 				"DPU": "3.4670231691e+21",
 				"WU": "10671098896.4"
 			}
-		],
-		"Jordan": [ (USED)
+		,
+		"Jordan":
 			{
 				"DEU": "7.97415290855e+22",
 				"DPU": "3.4670231691e+21",
 				"WU": "10671098896.4"
 			}
-		],
-		"Varsity": [
+		,
+		"Varsity":
 			{
 				"DEU": "7.97415290855e+22",
 				"DPU": "3.4670231691e+21",
 				"WU": "10671098896.4"
 			}
-		],
-		"Stadium": [
+		,
+		"Stadium": 
 			{
 				"DEU": "7.97415290855e+22",
 				"DPU": "3.4670231691e+21",
 				"WU": "10671098896.4"
 			}
-		],
-		"Williams": [ (USED)
+		,
+		"Williams":
 			{
 				"DEU": "7.97415290855e+22",
 				"DPU": "3.4670231691e+21",
 				"WU": "10671098896.4"
 			}
-		]
 	}
 	'''
 
